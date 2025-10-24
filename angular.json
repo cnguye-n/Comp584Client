@@ -49,7 +49,13 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -89,6 +95,6 @@
     }
   },
   "cli": {
-    "analytics": "c5115aa6-d642-4cc7-86fa-79ff8bc501f7"
+    "analytics": "abbcb48a-10cb-4478-b7dd-e0c51eef4e5b"
   }
 }
